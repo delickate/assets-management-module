@@ -32,6 +32,20 @@ composer require delickate/assets-management-module
 php artisan vendor:publish --tag=assets-management-module --force
 ```
 
+Copy following html and paste into any blade page. mostly being used in left navigation
+
+```bash
+<ul>
+ <li><a href="<?php echo url('assetsmanagement/asset_types/listing'); ?>">Asset types</a></li>
+ <li><a href="<?php echo url('assetsmanagement/asset_assignments/listing'); ?>">Asset assignments</a></li>
+ <li><a href="<?php echo url('assetsmanagement/asset_disposals/listing'); ?>">Asset disposals</a></li>
+ <li><a href="<?php echo url('assetsmanagement/asset_maintenance/listing'); ?>">Asset maintenance</a></li>
+ <li><a href="<?php echo url('assetsmanagement/asset_returns/listing'); ?>">Asset returns</a></li>
+ <li><a href="<?php echo url('assetsmanagement/assets/listing'); ?>">Assets</a></li>
+ <li><a href="<?php echo url('assetsmanagement/employees/listing'); ?>">Employees</a></li>
+ <li><a href="<?php echo url('assetsmanagement/vendors/listing'); ?>">Vendors</a></li>
+</ul>
+```
 ---
 
 # 🤝 Contributing
