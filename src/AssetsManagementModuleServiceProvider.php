@@ -9,7 +9,7 @@ class AssetsManagementModuleServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/Module/AssetsManagement' => app_path('Modules/AssetsManagement'),
+            __DIR__.'/Module/AssetsManagement' => base_path('Modules/AssetsManagement'),
         ], 'assets-management-module');
 
         if ($this->app->runningInConsole()) {
